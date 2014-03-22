@@ -20,9 +20,11 @@ if(empty($nbt_file)) {
 /* load and parse the nbt inventory data */
 $nbtinv = new NBTInv();
 $nbtinv->loadFile($nbt_file);
-$inventory = $nbtinv->get();
+$inventory = $nbtinv->getInv();
+$ender_inventory = $nbtinv->getEnderInv();
 
 /* init Multiverse Inventory from the data above */
 $mvinv = new MVInv();
-$mvinv->load($inventory);
+$mvinv->loadInv($inventory);
+$mvinv->loadEnderInv($ender_inventory);
 $mvinv->writeJSON($json_file);
