@@ -14,7 +14,7 @@ PHP 5.3+ with the gmp extension.
 
 Supports:
 ---------
-Inventory, Armor
+Inventory, EnderChest contents, Armor
 
 Currently missing:
 ------------------

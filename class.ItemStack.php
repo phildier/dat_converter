@@ -29,4 +29,11 @@ class ItemStack
 		}
 		$this->meta["enchants"][$type] = $level;
 	}
+
+	public function display($display)
+	{
+		$this->meta["=="] = "ItemMeta";
+		$this->meta["meta-type"] = "UNSPECIFIC";
+		$this->meta["display-name"] = $display->name;
+	}
 }
