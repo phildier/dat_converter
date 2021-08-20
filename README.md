@@ -1,31 +1,23 @@
-Dat Converter
-=============
-
+# Dat Converter
 This is a basic converter to turn vanilla minecraft player.dat files into 
 Multiverse-Inventories .json files.  
 
-Usage:
-------
+## Usage:
 php convert.php player.dat player.json
 
-Requirements:
--------------
+## Requirements:
 PHP 5.3+ with the gmp extension.
 
-Supports:
----------
+## Supports:
 Inventory, EnderChest contents, Armor
 
-Currently missing:
-------------------
+## Currently missing:
 Everything else (XP, Health, Hunger, Bed spawn, etc)
 
-License: 
---------
+## License: 
 Public domain.  Attribution would be nice.
 
-Notes:
-------
+## Notes:
 Utilizes the PHP NBT Decoder / Encoder library 
 by Justin Martin <frozenfire@thefrozenfire.com>
 <https://github.com/TheFrozenFire/PHP-NBT-Decoder-Encoder>
